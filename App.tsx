@@ -10,9 +10,9 @@
 
 import React from 'react';
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
+  SafeAreaView, // 노치나 카메라 부분을 없는 부분 취급해준다. -> 최상단은 SafeAreaView해줌
+  ScrollView, // 그냥 view 사용하면 스크롤 안생기고 화면 안넘어감 -> 성능 문제가 있어서 컨텐츠가 많아 질 경우 Flatlist 사용해야함
+  StatusBar, // react-native-status-bar 라이브러리로 높이 구함
   StyleSheet,
   Text,
   useColorScheme,
