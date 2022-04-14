@@ -44,12 +44,14 @@ react-native@0.66 버전, 한 달에 0.1씩 올라가는데 요즘 개발 속도
 - app.json: name은 앱 컴포넌트 이름이니 함부로 바꾸면 안 됨, 이거 바꾸면 네이티브 컴포넌트 이름도 다 바꿔야함, displayName은 앱 이름 변경용
   - ios/FoodDeliveryApp/AppDelegate.m 의 moduleName
   - android/app/src/main/java/com/fooddeliveryapp/MainActivity.java 의 getMainComponentName
-- babel.config.js: 바벨 설정
-- index.js: 메인 파일
+- babel.config.js: 바벨 설정, 메트로 서버 설정돼있는데(메트로서버는 웹팩 데브의 역할한다.)
+- index.js: 메인 파일(프로젝트의 첫 시작 파일)
 - App.tsx: 기본 App 컴포넌트
 - metro.config.js: 메트로 설정 파일(웹팩 대신 사용)
 - tsconfig.json: 타입스크립트 설정
 - android/app/src/main/java/com/fooddeliveryapp/MainActivity.java: 안드로이드 액티비티에서 js엔진 통해 리액트 코드 실행 + bridge로 소통
+- wathmanconfig : 파일감시하는 기능(ios에서 자주 사용될 수 있으)
+- tsconfig.json : typescript 설정('strict':true 이 설정이 중요!)
 
 ## 앱 실행 후
 
